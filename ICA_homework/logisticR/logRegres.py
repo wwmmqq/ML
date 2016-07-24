@@ -37,11 +37,10 @@ def stocGradAscent0(train_x, train_y, maxCycles=100):
 	alpha = 0.01
 	numSamples, numFeatures = shape(train_x)
 	w  = ones((numFeatures, 1))
-
 	for i in range(numSamples):
-		h = sigmoid(sum(train_x[i, :] * w))
-        error = train_y[i, 0] - h
-        w = w + alpha * train_x[i, :].transpose() * error
+		h = sigmoid(sum(train_x[i, :] * w))#sum remove is ok, just make np(1,1) to a number
+		error = train_y[i, 0] - h
+		w = w + alpha * train_x[i, :].transpose() * error
 	return w
 
 
@@ -79,7 +78,7 @@ def predict(weights, test_x, test_y):
 def main():
 	myData, myLabel = loadData('train.txt')
 	#weights = gradAscent(myData, myLabel)
-	weights = stocGradAscent1(myData, myLabel)
+	weights = stocGradAscent0(myData, myLabel)
 
 	testData, testLabel = loadData('test.txt')
 	accuracy = predict(weights, testData, testLabel)

@@ -8,3 +8,8 @@ ICAhomework
     2. k-measn
     3. knn
     4. logistic regression
+
+
+NN(neural network)
+	1. bp neural network(data set: MNIST)
+	
