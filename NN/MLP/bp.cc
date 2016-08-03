@@ -138,8 +138,8 @@ public:
 	{
 		FILE *image_train;
 		FILE *image_label;
-		image_train = fopen("MNIST/train-images.idx3-ubyte", "rb");
-		image_label = fopen("MNIST/train-labels.idx1-ubyte", "rb");
+		image_train = fopen("../data/mnist/train-images-idx3-ubyte", "rb");
+		image_label = fopen("../data/mnist/train-labels-idx1-ubyte", "rb");
 		if (image_train == NULL || image_label == NULL){
 			std::cout << "can't open the file!" << std::endl;
 			exit(0);
@@ -209,8 +209,8 @@ public:
 
 		FILE *image_test;
 		FILE *image_test_label;
-		image_test = fopen("MNIST/t10k-images.idx3-ubyte", "rb");
-		image_test_label = fopen("MNIST/t10k-labels.idx1-ubyte", "rb");
+		image_test = fopen("../data/mnist/t10k-images-idx3-ubyte", "rb");
+		image_test_label = fopen("../data/mnist/t10k-labels-idx1-ubyte", "rb");
 		if (image_test == NULL || image_test_label == NULL){
 			std::cout << "can't open the file!" << std::endl;
 			exit(0);

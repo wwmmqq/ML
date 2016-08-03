@@ -4,12 +4,16 @@
 ----
 
 ICAhomework
-    1. naiveBayes
-    2. k-measn
-    3. knn
-    4. logistic regression
+    -  naiveBayes
+    -  k-measn
+    -  knn
+    -  logistic regression
+    
 
+----
 
 NN(neural network)
-	1. bp neural network(data set: MNIST)
+    - logistic regression(theano; data: own data)
+	-  bp neural network(cpp; data: mnist)
+    - multiple logistic regression( theano; data: mnist)
 	

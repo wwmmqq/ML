@@ -3,6 +3,7 @@ a.out
 *.a
 *.o
 *.pyc
+*.pkl
 
 /test
-/NN/MNIST
+/NN/data
