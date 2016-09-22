@@ -16,4 +16,8 @@ NN(neural network)
     - logistic regression(theano; data: own data)
 	-  bp neural network(cpp; data: mnist)
     - multiple logistic regression( theano; data: mnist)
-	
+
+## Algorithm
+
+    1. PCA
+    	
